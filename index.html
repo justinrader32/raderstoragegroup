@@ -17,11 +17,11 @@
   <title>Rader Storage Group - Self-Storage Acquisitions</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: h0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --navy: #0d1b2e;
-      --navy-mid: #162438;h
+      --navy-mid: #162438;
       --navy-light: #1e3050;
       --gold: #4a90d9;
       --gold-light: #6aaae8;
@@ -253,11 +253,6 @@
       .two-col { grid-template-columns: 1fr; gap: 40px; }
       nav { padding: 16px 24px; }
       .stats-strip { padding: 40px 24px; }
-      .pillars { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-    }
-
-    @media (max-width: 480px) {
-      .pillars { grid-template-columns: 1fr; }
     }
 
     /* PROCESS */
@@ -331,6 +326,14 @@
       font-size: 0.88rem;
       color: var(--text-muted);
       line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .pillars { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .pillars { grid-template-columns: 1fr; }
     }
 
     /* FORM SECTION */
